@@ -3,123 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Channel Letters商店原型展示</title>
+    <title>Channel Letters商店 - 登录</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-        }
-        .prototype-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            padding: 20px;
-        }
-        .prototype-frame {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .prototype-title {
-            padding: 10px;
-            background-color: #f8f9fa;
-            border-bottom: 1px solid #ddd;
-            font-weight: bold;
-        }
-        iframe {
-            width: 100%;
-            height: 600px;
-            border: none;
-        }
-        @media (max-width: 1024px) {
-            .prototype-container {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
-<body class="bg-gray-100">
-    <header class="bg-blue-600 text-white p-4">
-        <div class="container mx-auto">
-            <h1 class="text-2xl font-bold">Channel Letters 商店原型</h1>
-            <p class="mt-2">高保真原型界面展示</p>
+<body class="bg-gray-50">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-blue-600">
+                        <i class="fas fa-sign mr-2"></i>Channel Letters
+                    </span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="product-list.html" class="text-gray-700 hover:text-blue-600">产品</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">关于我们</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">联系我们</a>
+                </div>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <div class="container mx-auto my-8">
-        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
-            <h2 class="text-xl font-bold mb-4">项目概述</h2>
-            <p class="mb-2">本项目是一个类似B2Sign Channel Letters模块的购物网站原型，核心功能包括：</p>
-            <ul class="list-disc pl-5 mb-4">
-                <li>用户认证（登录/注册）</li>
-                <li>商品浏览与搜索</li>
-                <li>商品详情展示</li>
-                <li>画布编辑功能（核心功能）</li>
-                <li>购物车管理</li>
-                <li>订单跟踪与物流信息</li>
-            </ul>
-            <p>以下展示了各个界面的高保真原型，可直接用于开发参考。</p>
-        </div>
+    <!-- 登录区域 -->
+    <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-md w-full space-y-8">
+            <div>
+                <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">欢迎登录Channel Letters</h2>
+                <p class="mt-2 text-center text-sm text-gray-600">
+                    或者
+                    <a href="register.html" class="font-medium text-blue-600 hover:text-blue-500">注册新账号</a>
+                </p>
+            </div>
+            <form class="mt-8 space-y-6" action="home.html" method="GET" id="loginForm">
+                <div class="rounded-md shadow-sm -space-y-px">
+                    <div>
+                        <label for="username" class="sr-only">用户名/手机号</label>
+                        <input id="username" name="username" type="text" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="用户名/手机号">
+                    </div>
+                    <div>
+                        <label for="password" class="sr-only">密码</label>
+                        <input id="password" name="password" type="password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="密码">
+                    </div>
+                </div>
 
-        <div class="prototype-container">
-            <div class="prototype-frame">
-                <div class="prototype-title">首页</div>
-                <iframe src="home.html" title="首页"></iframe>
-            </div>
-            
-            <div class="prototype-frame">
-                <div class="prototype-title">登录页面</div>
-                <iframe src="login.html" title="登录页面"></iframe>
-            </div>
-            
-            <div class="prototype-frame">
-                <div class="prototype-title">注册页面</div>
-                <iframe src="register.html" title="注册页面"></iframe>
-            </div>
-            
-            <div class="prototype-frame">
-                <div class="prototype-title">商品列表页</div>
-                <iframe src="product-list.html" title="商品列表页"></iframe>
-            </div>
-            
-            <div class="prototype-frame">
-                <div class="prototype-title">商品详情页</div>
-                <iframe src="product-detail.html" title="商品详情页"></iframe>
-            </div>
-            
-            <div class="prototype-frame">
-                <div class="prototype-title">画布编辑器</div>
-                <iframe src="canvas-editor.html" title="画布编辑器"></iframe>
-            </div>
-            
-            <div class="prototype-frame">
-                <div class="prototype-title">购物车页面</div>
-                <iframe src="cart.html" title="购物车页面"></iframe>
-            </div>
-            
-            <div class="prototype-frame">
-                <div class="prototype-title">结算页面</div>
-                <iframe src="checkout.html" title="结算页面"></iframe>
-            </div>
-            
-            <div class="prototype-frame">
-                <div class="prototype-title">订单确认和跟踪页面</div>
-                <iframe src="order-confirmation.html" title="订单确认和跟踪页面"></iframe>
-            </div>
-            
-            <div class="prototype-frame">
-                <div class="prototype-title">用户个人中心</div>
-                <iframe src="user-center.html" title="用户个人中心"></iframe>
-            </div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                        <label for="remember-me" class="ml-2 block text-sm text-gray-900">记住我</label>
+                    </div>
+
+                    <div class="text-sm">
+                        <a href="#" class="font-medium text-blue-600 hover:text-blue-500">忘记密码？</a>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+                            <i class="fas fa-lock text-blue-500 group-hover:text-blue-400"></i>
+                        </span>
+                        登录
+                    </button>
+                </div>
+
+                <div class="flex items-center justify-center space-x-4">
+                    <span class="flex-grow border-t border-gray-300"></span>
+                    <span class="text-gray-500">其他登录方式</span>
+                    <span class="flex-grow border-t border-gray-300"></span>
+                </div>
+
+                <div class="flex justify-center space-x-6">
+                    <button type="button" class="text-gray-500 hover:text-gray-700">
+                        <i class="fab fa-weixin text-2xl text-green-500"></i>
+                    </button>
+                    <button type="button" class="text-gray-500 hover:text-gray-700">
+                        <i class="fab fa-qq text-2xl text-blue-500"></i>
+                    </button>
+                    <button type="button" class="text-gray-500 hover:text-gray-700">
+                        <i class="fab fa-weibo text-2xl text-red-500"></i>
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
 
-    <footer class="bg-gray-800 text-white p-6">
-        <div class="container mx-auto">
-            <p class="text-center">© 2023 Channel Letters商店 - 原型设计</p>
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Channel Letters</h3>
+                    <p class="text-gray-400">高品质定制Channel Letters供应商，为您的品牌提供最佳视觉体验。</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">快速链接</h3>
+                    <ul class="space-y-2">
+                        <li><a href="product-list.html" class="text-gray-400 hover:text-white">产品</a></li>
+                        <li><a href="canvas-editor.html" class="text-gray-400 hover:text-white">设计工具</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">关于我们</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">联系我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">联系我们</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> <span class="text-gray-400">上海市浦东新区张江高科技园区</span></li>
+                        <li class="flex items-center"><i class="fas fa-phone mr-2"></i> <span class="text-gray-400">400-123-4567</span></li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-2"></i> <span class="text-gray-400">info@channelletters.com</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">关注我们</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-weixin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-weibo"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-qq"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center">
+                <p class="text-gray-400">&copy; 2023 Channel Letters商店. 保留所有权利.</p>
+            </div>
         </div>
     </footer>
+
+    <script>
+        // 添加登录表单提交处理
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+            // 这里可以添加实际的登录验证逻辑
+            // 为了演示，我们使用一个简单的判断
+            if (username && password) {
+                // 模拟登录成功
+                localStorage.setItem('isLoggedIn', 'true');
+                localStorage.setItem('username', username);
+                
+                // 跳转到主页
+                window.location.href = 'home.html';
+            } else {
+                alert('请输入用户名和密码');
+            }
+        });
+    </script>
 </body>
-</html> 
+</html>
