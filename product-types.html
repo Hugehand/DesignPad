@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Channel Letters商店 - 产品类型</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="home.html" class="text-2xl font-bold text-blue-600">
+                        <i class="fas fa-sign mr-2"></i>Channel Letters
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="product-list.html" class="text-gray-700 hover:text-blue-600">产品</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">关于我们</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">联系我们</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <input type="text" placeholder="搜索产品..." class="pl-10 pr-4 py-2 rounded-full border focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                    </div>
+                    <a href="cart.html" class="text-gray-700 hover:text-blue-600 relative">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span class="absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">3</span>
+                    </a>
+                    <a href="login.html" class="text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-user text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面标题 -->
+    <div class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">产品类型与定制选项</h1>
+            <p class="text-xl max-w-3xl mx-auto">我们提供多种类型的发光字和门牌号，以下是各类产品的效果图及定制选项</p>
+        </div>
+    </div>
+
+    <!-- 产品类型列表 -->
+    <div class="container mx-auto px-4 py-12">
+        <!-- 美式发光字 -->
+        <section id="american-style" class="mb-16">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1563019583-c67fa08ef7dd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="美式发光字" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">美式发光字</h2>
+                        <p class="text-gray-600 mb-6">美式发光字是商业标识中最受欢迎的选择之一，以其清晰的照明和高辨识度而闻名。适用于室内外各种商业场所，能够有效提升品牌曝光度。</p>
+                        
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-700 mb-4">定制选项</h3>
+                            <ul class="space-y-3 text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-semibold">识别logo和文字尺寸：</span>需上传1:1标准尺寸图片
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-semibold">发光类型：</span>正面发光、双面发光
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-semibold">面盖板颜色：</span>可选多种颜色
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-semibold">面盖周围：</span>颜色自选，宽度可选（0.3cm或0.7cm）
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-semibold">铝围边：</span>宽度可选（3.5cm或5.5cm），多种颜色可选
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="mt-8">
+                                <a href="product-detail.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">定制美式发光字</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 背光金属字 -->
+        <section id="backlit-metal" class="mb-16">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex flex-row-reverse">
+                    <div class="md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1536599424071-0b215a388ba7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="背光金属字" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">背光金属字</h2>
+                        <p class="text-gray-600 mb-6">背光金属字以其高级质感和独特光晕效果而备受青睐。金属表面与背光照明的结合创造出高端大气的视觉效果，适合高档商业场所和企业前台。</p>
+                        
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-700 mb-4">定制选项</h3>
+                            <ul class="space-y-3 text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-semibold">识别：</span>需上传设计图稿
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-semibold">外壳颜色：</span>多种金属色可选
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-semibold">logo图案工艺：</span>3M贴膜、写真贴膜
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-semibold">认证标识：</span>可选是否添加
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-semibold">发货方式：</span>自取、木箱发货
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="mt-8">
+                                <a href="product-detail.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">定制背光金属字</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 无边发光字 -->
+        <section id="borderless-light" class="mb-16">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1585829365295-ab7cd400c167?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="无边发光字" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">无边发光字</h2>
+                        <p class="text-gray-600 mb-6">无边发光字采用无框设计，创造出漂浮发光的视觉效果。这种设计极简而现代，适合追求简约风格的商业空间和品牌。</p>
+                        
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-700 mb-4">定制选项</h3>
+                            <ul class="space-y-3 text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-semibold">识别：</span>需上传设计图稿
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-semibold">发光类型：</span>正面发光、双面发光
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-semibold">面板颜色：</span>多种颜色可选
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-semibold">围边颜色：</span>多种颜色可选
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-semibold">背光颜色：</span>多种颜色可选
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="mt-8">
+                                <a href="product-detail.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">定制无边发光字</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 迷你发光字 -->
+        <section id="mini-light" class="mb-16">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex flex-row-reverse">
+                    <div class="md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1534531173927-aeb928d54385?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="迷你发光字" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">迷你发光字</h2>
+                        <p class="text-gray-600 mb-6">迷你发光字是小型空间的理想选择，体积小巧但效果出众。适用于室内标识、小型商店或需要精致标识的场合。</p>
+                        
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-700 mb-4">定制选项</h3>
+                            <ul class="space-y-3 text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-semibold">识别：</span>需上传设计图稿
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-semibold">发光类型：</span>正面发光、双面发光
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-semibold">面板颜色：</span>多种颜色可选
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-semibold">围边颜色：</span>多种颜色可选
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-semibold">背光颜色：</span>多种颜色可选
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="mt-8">
+                                <a href="product-detail.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">定制迷你发光字</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 门牌号 -->
+        <section id="door-number" class="mb-16">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1518709911915-712d5fd04677?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="门牌号" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">门牌号</h2>
+                        <p class="text-gray-600 mb-6">高品质门牌号使您的住宅或商业空间更加专业和易于识别。我们提供多种材质和风格，满足不同场合的需求。</p>
+                        
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-700 mb-4">定制选项</h3>
+                            <ul class="space-y-3 text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-semibold">识别：</span>需上传设计图稿
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-semibold">材料：</span>不锈钢、烤漆背面（侧边颜色）、亚克力发光（侧边颜色）、实心钢、实心铝
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="mt-8">
+                                <a href="product-detail.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">定制门牌号</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 定价说明 -->
+        <section class="bg-blue-50 p-8 rounded-xl shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">价格计算说明</h2>
+            <p class="text-gray-700 mb-4">我们的产品价格根据您选择的材料、尺寸和定制选项动态计算。系统会根据以下因素自动生成最终价格：</p>
+            <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                <li>产品类型基础价格</li>
+                <li>尺寸（按平方厘米或线性厘米计算）</li>
+                <li>材料选择（不同材料有不同价格系数）</li>
+                <li>工艺复杂度（例如双面发光比单面发光价格更高）</li>
+                <li>特殊处理（如特殊颜色、定制设计等）</li>
+                <li>发货方式（木箱发货会有额外费用）</li>
+            </ul>
+            <p class="mt-4 text-gray-700">在您进行产品定制过程中，系统会实时显示价格，让您清楚了解每个选择对最终价格的影响。</p>
+        </section>
+    </div>
+
+    <!-- 行动召唤 -->
+    <div class="bg-blue-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">准备好开始定制您的专属发光字了吗？</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">无论您需要哪种类型的发光字，我们都能为您打造完美符合需求的产品。</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="canvas-editor.html" class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition duration-300">开始设计</a>
+                <a href="product-list.html" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-blue-600 transition duration-300">浏览产品</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Channel Letters</h3>
+                    <p class="text-gray-400">高品质定制Channel Letters供应商，为您的品牌提供最佳视觉体验。</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">快速链接</h3>
+                    <ul class="space-y-2">
+                        <li><a href="home.html" class="text-gray-400 hover:text-white">首页</a></li>
+                        <li><a href="product-list.html" class="text-gray-400 hover:text-white">产品</a></li>
+                        <li><a href="canvas-editor.html" class="text-gray-400 hover:text-white">设计工具</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">关于我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">联系我们</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> <span class="text-gray-400">上海市浦东新区张江高科技园区</span></li>
+                        <li class="flex items-center"><i class="fas fa-phone mr-2"></i> <span class="text-gray-400">400-123-4567</span></li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-2"></i> <span class="text-gray-400">info@channelletters.com</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">关注我们</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-weixin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-weibo"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-qq"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center">
+                <p class="text-gray-400">&copy; 2023 Channel Letters商店. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

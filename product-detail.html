@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Channel Letters商店 - 产品详情</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="home.html" class="text-2xl font-bold text-blue-600">
+                        <i class="fas fa-sign mr-2"></i>Channel Letters
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="product-list.html" class="text-gray-700 hover:text-blue-600">产品</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">关于我们</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">联系我们</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <input type="text" placeholder="搜索产品..." class="pl-10 pr-4 py-2 rounded-full border focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                    </div>
+                    <a href="cart.html" class="text-gray-700 hover:text-blue-600 relative">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span class="absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">3</span>
+                    </a>
+                    <a href="user-center.html" class="text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-user text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 面包屑导航 -->
+    <div class="container mx-auto px-4 py-4">
+        <div class="flex items-center text-sm text-gray-600">
+            <a href="home.html" class="hover:text-blue-600">首页</a>
+            <i class="fas fa-chevron-right mx-2 text-xs"></i>
+            <a href="product-list.html" class="hover:text-blue-600">产品</a>
+            <i class="fas fa-chevron-right mx-2 text-xs"></i>
+            <span class="text-gray-800">美式发光字</span>
+        </div>
+    </div>
+
+    <!-- 产品详情 -->
+    <div class="container mx-auto px-4 py-8">
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- 左侧产品图片 -->
+            <div class="lg:w-1/2">
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="美式发光字" class="w-full rounded-lg">
+                    <div class="grid grid-cols-4 gap-4 mt-4">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="细节图1" class="w-full rounded-lg cursor-pointer border-2 border-blue-600">
+                        <img src="https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="细节图2" class="w-full rounded-lg cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1563019583-c67fa08ef7dd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="细节图3" class="w-full rounded-lg cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1468657988500-aca2be09f4c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="细节图4" class="w-full rounded-lg cursor-pointer">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右侧产品信息 -->
+            <div class="lg:w-1/2">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h1 class="text-3xl font-bold mb-4">美式发光字</h1>
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-gray-600 ml-2">(42条评价)</span>
+                    </div>
+                    <p class="text-2xl text-blue-600 font-bold mb-6">¥1299起</p>
+                    
+                    <!-- 定制选项 -->
+                    <div class="space-y-6">
+                        <!-- 上传设计 -->
+                        <div>
+                            <h3 class="text-lg font-semibold mb-3">上传设计图</h3>
+                            <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
+                                <i class="fas fa-cloud-upload-alt text-4xl text-gray-400 mb-2"></i>
+                                <p class="text-gray-600">点击或拖拽文件到此处上传</p>
+                                <p class="text-gray-500 text-sm mt-1">支持JPG、PNG格式，建议尺寸1:1</p>
+                                <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">选择文件</button>
+                            </div>
+                        </div>
+
+                        <!-- 发光方式 -->
+                        <div>
+                            <h3 class="text-lg font-semibold mb-3">发光方式</h3>
+                            <div class="flex space-x-4">
+                                <label class="flex items-center">
+                                    <input type="radio" name="lighting" class="form-radio text-blue-600" checked>
+                                    <span class="ml-2">正面发光</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="lighting" class="form-radio text-blue-600">
+                                    <span class="ml-2">双面发光</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- 面板颜色 -->
+                        <div>
+                            <h3 class="text-lg font-semibold mb-3">面板颜色</h3>
+                            <div class="flex flex-wrap gap-3">
+                                <button class="w-8 h-8 rounded-full bg-white border-2 border-gray-300 ring-2 ring-blue-600"></button>
+                                <button class="w-8 h-8 rounded-full bg-black border-2 border-gray-300"></button>
+                                <button class="w-8 h-8 rounded-full bg-red-500 border-2 border-gray-300"></button>
+                                <button class="w-8 h-8 rounded-full bg-blue-500 border-2 border-gray-300"></button>
+                                <button class="w-8 h-8 rounded-full bg-yellow-500 border-2 border-gray-300"></button>
+                                <button class="w-8 h-8 rounded-full bg-green-500 border-2 border-gray-300"></button>
+                            </div>
+                        </div>
+
+                        <!-- 边缘颜色 -->
+                        <div>
+                            <h3 class="text-lg font-semibold mb-3">边缘颜色</h3>
+                            <div class="flex flex-wrap gap-3">
+                                <button class="w-8 h-8 rounded-full bg-white border-2 border-gray-300"></button>
+                                <button class="w-8 h-8 rounded-full bg-black border-2 border-gray-300 ring-2 ring-blue-600"></button>
+                                <button class="w-8 h-8 rounded-full bg-gray-500 border-2 border-gray-300"></button>
+                                <button class="w-8 h-8 rounded-full bg-yellow-900 border-2 border-gray-300"></button>
+                            </div>
+                        </div>
+
+                        <!-- 边缘宽度 -->
+                        <div>
+                            <h3 class="text-lg font-semibold mb-3">边缘宽度</h3>
+                            <div class="flex items-center space-x-4">
+                                <input type="range" min="1" max="5" value="2" class="w-48">
+                                <span class="text-gray-600">2cm</span>
+                            </div>
+                        </div>
+
+                        <!-- 铝边框宽度 -->
+                        <div>
+                            <h3 class="text-lg font-semibold mb-3">铝边框宽度</h3>
+                            <div class="flex items-center space-x-4">
+                                <input type="range" min="1" max="5" value="3" class="w-48">
+                                <span class="text-gray-600">3cm</span>
+                            </div>
+                        </div>
+
+                        <!-- 尺寸输入 -->
+                        <div>
+                            <h3 class="text-lg font-semibold mb-3">尺寸（厘米）</h3>
+                            <div class="flex space-x-4">
+                                <div>
+                                    <label class="text-sm text-gray-600">宽度</label>
+                                    <input type="number" class="mt-1 w-24 px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" value="100">
+                                </div>
+                                <div>
+                                    <label class="text-sm text-gray-600">高度</label>
+                                    <input type="number" class="mt-1 w-24 px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" value="50">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 数量 -->
+                        <div>
+                            <h3 class="text-lg font-semibold mb-3">数量</h3>
+                            <div class="flex items-center space-x-4">
+                                <button class="px-3 py-1 border rounded-md text-gray-600 hover:bg-gray-100">-</button>
+                                <input type="number" class="w-20 px-3 py-1 border rounded-md text-center focus:outline-none focus:ring-2 focus:ring-blue-500" value="1">
+                                <button class="px-3 py-1 border rounded-md text-gray-600 hover:bg-gray-100">+</button>
+                            </div>
+                        </div>
+
+                        <!-- 操作按钮 -->
+                        <div class="flex space-x-4 mt-8">
+                            <button class="flex-1 bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 flex items-center justify-center">
+                                <i class="fas fa-shopping-cart mr-2"></i>
+                                加入购物车
+                            </button>
+                            <button class="flex-1 bg-red-600 text-white py-3 rounded-md hover:bg-red-700 flex items-center justify-center">
+                                <i class="fas fa-bolt mr-2"></i>
+                                立即购买
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 产品详细信息标签页 -->
+        <div class="mt-12">
+            <div class="border-b border-gray-200">
+                <nav class="flex space-x-8">
+                    <button class="border-b-2 border-blue-600 py-4 px-1 text-blue-600 font-medium">
+                        产品详情
+                    </button>
+                    <button class="py-4 px-1 text-gray-500 font-medium hover:text-gray-700">
+                        规格参数
+                    </button>
+                    <button class="py-4 px-1 text-gray-500 font-medium hover:text-gray-700">
+                        用户评价
+                    </button>
+                </nav>
+            </div>
+
+            <!-- 产品详情内容 -->
+            <div class="bg-white rounded-lg shadow-md p-6 mt-6">
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">产品特点</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li>采用高品质亚克力材料，透光性好，不易变形</li>
+                            <li>LED光源，节能环保，寿命长达50000小时</li>
+                            <li>防水等级IP65，适合室内外使用</li>
+                            <li>可选择正面发光或双面发光，满足不同场景需求</li>
+                            <li>支持定制各种颜色和尺寸</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">适用场景</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li>商场店铺门头</li>
+                            <li>酒店大堂</li>
+                            <li>办公室前台</li>
+                            <li>展览展示</li>
+                            <li>品牌形象墙</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">安装说明</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="text-center">
+                                <img src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="安装步骤1" class="w-full rounded-lg mb-3">
+                                <p class="text-gray-600">1. 确定安装位置并标记</p>
+                            </div>
+                            <div class="text-center">
+                                <img src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="安装步骤2" class="w-full rounded-lg mb-3">
+                                <p class="text-gray-600">2. 安装支架和电源</p>
+                            </div>
+                            <div class="text-center">
+                                <img src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="安装步骤3" class="w-full rounded-lg mb-3">
+                                <p class="text-gray-600">3. 固定字体并接通电源</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Channel Letters</h3>
+                    <p class="text-gray-400">高品质定制Channel Letters供应商，为您的品牌提供最佳视觉体验。</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">快速链接</h3>
+                    <ul class="space-y-2">
+                        <li><a href="home.html" class="text-gray-400 hover:text-white">首页</a></li>
+                        <li><a href="product-list.html" class="text-gray-400 hover:text-white">产品</a></li>
+                        <li><a href="canvas-editor.html" class="text-gray-400 hover:text-white">设计工具</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">关于我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">联系我们</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> <span class="text-gray-400">上海市浦东新区张江高科技园区</span></li>
+                        <li class="flex items-center"><i class="fas fa-phone mr-2"></i> <span class="text-gray-400">400-123-4567</span></li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-2"></i> <span class="text-gray-400">info@channelletters.com</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">关注我们</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-weixin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-weibo"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-qq"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center">
+                <p class="text-gray-400">&copy; 2023 Channel Letters商店. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

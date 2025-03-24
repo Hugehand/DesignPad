@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Channel Letters商店原型展示</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .prototype-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .prototype-frame {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .prototype-title {
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+            font-weight: bold;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+        @media (max-width: 1024px) {
+            .prototype-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto">
+            <h1 class="text-2xl font-bold">Channel Letters 商店原型</h1>
+            <p class="mt-2">高保真原型界面展示</p>
+        </div>
+    </header>
+
+    <div class="container mx-auto my-8">
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-xl font-bold mb-4">项目概述</h2>
+            <p class="mb-2">本项目是一个类似B2Sign Channel Letters模块的购物网站原型，核心功能包括：</p>
+            <ul class="list-disc pl-5 mb-4">
+                <li>用户认证（登录/注册）</li>
+                <li>商品浏览与搜索</li>
+                <li>商品详情展示</li>
+                <li>画布编辑功能（核心功能）</li>
+                <li>购物车管理</li>
+                <li>订单跟踪与物流信息</li>
+            </ul>
+            <p>以下展示了各个界面的高保真原型，可直接用于开发参考。</p>
+        </div>
+
+        <div class="prototype-container">
+            <div class="prototype-frame">
+                <div class="prototype-title">首页</div>
+                <iframe src="home.html" title="首页"></iframe>
+            </div>
+            
+            <div class="prototype-frame">
+                <div class="prototype-title">登录页面</div>
+                <iframe src="login.html" title="登录页面"></iframe>
+            </div>
+            
+            <div class="prototype-frame">
+                <div class="prototype-title">注册页面</div>
+                <iframe src="register.html" title="注册页面"></iframe>
+            </div>
+            
+            <div class="prototype-frame">
+                <div class="prototype-title">商品列表页</div>
+                <iframe src="product-list.html" title="商品列表页"></iframe>
+            </div>
+            
+            <div class="prototype-frame">
+                <div class="prototype-title">商品详情页</div>
+                <iframe src="product-detail.html" title="商品详情页"></iframe>
+            </div>
+            
+            <div class="prototype-frame">
+                <div class="prototype-title">画布编辑器</div>
+                <iframe src="canvas-editor.html" title="画布编辑器"></iframe>
+            </div>
+            
+            <div class="prototype-frame">
+                <div class="prototype-title">购物车页面</div>
+                <iframe src="cart.html" title="购物车页面"></iframe>
+            </div>
+            
+            <div class="prototype-frame">
+                <div class="prototype-title">结算页面</div>
+                <iframe src="checkout.html" title="结算页面"></iframe>
+            </div>
+            
+            <div class="prototype-frame">
+                <div class="prototype-title">订单确认和跟踪页面</div>
+                <iframe src="order-confirmation.html" title="订单确认和跟踪页面"></iframe>
+            </div>
+            
+            <div class="prototype-frame">
+                <div class="prototype-title">用户个人中心</div>
+                <iframe src="user-center.html" title="用户个人中心"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white p-6">
+        <div class="container mx-auto">
+            <p class="text-center">© 2023 Channel Letters商店 - 原型设计</p>
+        </div>
+    </footer>
+</body>
+</html> 

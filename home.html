@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Channel Letters商店 - 首页</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="home.html" class="text-2xl font-bold text-blue-600">
+                        <i class="fas fa-sign mr-2"></i>Channel Letters
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="product-list.html" class="text-gray-700 hover:text-blue-600">产品</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">关于我们</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">联系我们</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <input type="text" placeholder="搜索产品..." class="pl-10 pr-4 py-2 rounded-full border focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                    </div>
+                    <a href="cart.html" class="text-gray-700 hover:text-blue-600 relative">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span class="absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">3</span>
+                    </a>
+                    <a href="login.html" class="text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-user text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 横幅 -->
+    <div class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+        <div class="container mx-auto px-4 py-16">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl font-bold mb-4">定制您的Channel Letters</h1>
+                    <p class="text-xl mb-6">高品质、专业定制的发光字，为您的品牌增添魅力</p>
+                    <a href="product-list.html" class="bg-white text-blue-600 px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition duration-300">立即探索</a>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Channel Letters展示" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 产品类别 -->
+    <div class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-center mb-12">产品类别</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                <img src="https://images.unsplash.com/photo-1560452992-e3c28ffc6432?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="背光式字" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">背光式字</h3>
+                    <p class="text-gray-600 mb-4">优雅的背光设计，为您的品牌带来柔和而显眼的效果</p>
+                    <a href="product-list.html" class="text-blue-600 font-semibold hover:text-blue-800">查看更多 <i class="fas fa-chevron-right ml-1 text-sm"></i></a>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                <img src="https://images.unsplash.com/photo-1588412079929-790c8f7e8255?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="前光式字" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">前光式字</h3>
+                    <p class="text-gray-600 mb-4">明亮醒目的前光设计，让您的品牌在夜晚也能脱颖而出</p>
+                    <a href="product-list.html" class="text-blue-600 font-semibold hover:text-blue-800">查看更多 <i class="fas fa-chevron-right ml-1 text-sm"></i></a>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                <img src="https://images.unsplash.com/photo-1534531173927-aeb928d54385?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="混合式字" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">混合式字</h3>
+                    <p class="text-gray-600 mb-4">结合前光和背光技术，创造独特的视觉体验</p>
+                    <a href="product-list.html" class="text-blue-600 font-semibold hover:text-blue-800">查看更多 <i class="fas fa-chevron-right ml-1 text-sm"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 热门产品 -->
+    <div class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">热门产品</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <a href="product-detail.html">
+                        <img src="https://images.unsplash.com/photo-1520642413789-218021a0fd3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="产品1" class="w-full h-40 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-2">经典霓虹灯字</h3>
+                            <div class="flex justify-between items-center">
+                                <span class="text-blue-600 font-semibold">¥1299</span>
+                                <div class="flex items-center">
+                                    <div class="flex text-yellow-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="text-gray-500 text-sm ml-1">(42)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <a href="product-detail.html">
+                        <img src="https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="产品2" class="w-full h-40 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-2">LED前光式字</h3>
+                            <div class="flex justify-between items-center">
+                                <span class="text-blue-600 font-semibold">¥1599</span>
+                                <div class="flex items-center">
+                                    <div class="flex text-yellow-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="text-gray-500 text-sm ml-1">(56)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <a href="product-detail.html">
+                        <img src="https://images.unsplash.com/photo-1563019583-c67fa08ef7dd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="产品3" class="w-full h-40 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-2">金属背光式字</h3>
+                            <div class="flex justify-between items-center">
+                                <span class="text-blue-600 font-semibold">¥2099</span>
+                                <div class="flex items-center">
+                                    <div class="flex text-yellow-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="text-gray-500 text-sm ml-1">(38)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <a href="product-detail.html">
+                        <img src="https://images.unsplash.com/photo-1468657988500-aca2be09f4c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="产品4" class="w-full h-40 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-2">精品亚克力发光字</h3>
+                            <div class="flex justify-between items-center">
+                                <span class="text-blue-600 font-semibold">¥1899</span>
+                                <div class="flex items-center">
+                                    <div class="flex text-yellow-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="text-gray-500 text-sm ml-1">(47)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 功能特点 -->
+    <div class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-center mb-12">为什么选择我们</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-pencil-ruler text-blue-600 text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">定制设计</h3>
+                <p class="text-gray-600">使用我们的在线编辑工具，您可以轻松创建完全符合您需求的独特设计。</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-star text-blue-600 text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">优质材料</h3>
+                <p class="text-gray-600">我们只使用最高质量的材料，确保您的Channel Letters持久耐用并保持美观。</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-truck text-blue-600 text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">快速配送</h3>
+                <p class="text-gray-600">全国范围内的快速配送服务，让您在最短时间内收到您的定制产品。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 客户评价 -->
+    <div class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">客户评价</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"我们公司的新招牌完全超出了我的期望！在线设计工具非常易用，客服团队也很专业。成品质量一流，安装也很顺利。"</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="客户头像" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">王先生</h4>
+                            <p class="text-gray-500 text-sm">上海某餐厅老板</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"作为设计师，我非常欣赏这个平台的定制能力。我能够精确控制每个细节，最终产品与我的设计完全一致。物流也很快，客户非常满意！"</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="客户头像" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">李女士</h4>
+                            <p class="text-gray-500 text-sm">北京某设计工作室</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 行动号召 -->
+    <div class="bg-blue-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">准备好开始您的Channel Letters项目了吗？</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">立即使用我们的在线编辑工具，创建完全符合您需求的定制设计。</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="canvas-editor.html" class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition duration-300">开始设计</a>
+                <a href="product-list.html" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-blue-600 transition duration-300">浏览产品</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Channel Letters</h3>
+                    <p class="text-gray-400">高品质定制Channel Letters供应商，为您的品牌提供最佳视觉体验。</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">快速链接</h3>
+                    <ul class="space-y-2">
+                        <li><a href="home.html" class="text-gray-400 hover:text-white">首页</a></li>
+                        <li><a href="product-list.html" class="text-gray-400 hover:text-white">产品</a></li>
+                        <li><a href="canvas-editor.html" class="text-gray-400 hover:text-white">设计工具</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">关于我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">联系我们</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> <span class="text-gray-400">上海市浦东新区张江高科技园区</span></li>
+                        <li class="flex items-center"><i class="fas fa-phone mr-2"></i> <span class="text-gray-400">400-123-4567</span></li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-2"></i> <span class="text-gray-400">info@channelletters.com</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">关注我们</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-weixin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-weibo"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-qq"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="mt-4">
+                        <h4 class="text-sm font-semibold mb-2">订阅我们的邮件</h4>
+                        <div class="flex">
+                            <input type="email" placeholder="您的邮箱地址" class="px-4 py-2 w-full rounded-l-md focus:outline-none text-gray-800">
+                            <button class="bg-blue-600 px-4 py-2 rounded-r-md hover:bg-blue-700"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center">
+                <p class="text-gray-400">&copy; 2023 Channel Letters商店. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
